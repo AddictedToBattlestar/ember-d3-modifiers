@@ -1,5 +1,5 @@
 import EmberRouter from '@ember/routing/router';
-import config from './config/environment';
+import config from 'dummy/config/environment';
 
 export default class Router extends EmberRouter {
   location = config.locationType;
@@ -21,5 +21,6 @@ Router.map(function() {
     this.route('threshold-lines-demo');
     this.route('mixed-chart-types-demo');
     this.route('custom-layout-demo');
+    this.route('changing-threshold-lines-demo');
   });
 });
